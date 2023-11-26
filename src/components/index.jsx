@@ -38,12 +38,22 @@ const Components = () => {
     };
 
     const borrarTask = (text) => {
-        setTasks(tasks.filter((task) => task.text !== text));
-    };
+      const openTasks = [...tasks];
+      const taskIndex = openTasks.findIndex(
+        (task) => task.text === text
+      );
+      openTasks.splice(taskIndex, 1);
+      setTasks(openTasks);
+  }
 
-    const completarTask = (text) => {
-        setTasks(tasks.map((task) => (task.text === text ? { ...task, completed: !task.completed } : task)));
-    };
+  const completarTask = (text) => {
+      const openTasks = [...tasks];
+      const taskIndex = openTasks.findIndex(
+        (task) => task.text === text && task.completed == false
+      );
+      openTasks[taskIndex].completed = true;
+      setTasks(openTasks);
+  }
 
     return (
         <div className="App-container">
