@@ -1,0 +1,27 @@
+.file-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-size: 30px;
+}
+
+.button-create {
+    margin: 10px;
+    padding: 15px;
+    width: 150px;
+    color: #fff;
+    background-color: #000;
+    font-size: 22px;
+    transition: 0.5s ease;
+}
+
+.button-create:hover {
+    background-color: #008000;
+}
