@@ -5,3 +5,9 @@ ul {
     font-weight: bold;
     margin: 30px;
 }
+
+@media (max-width: 768px) {
+    ul {
+        margin: 0;
+    }
+}

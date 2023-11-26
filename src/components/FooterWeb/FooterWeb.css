@@ -6,12 +6,25 @@
     margin-top: auto;
 }
 
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .footer-p {
     margin: 0;
 }
 
 .footer-a {
+    font-size: 24px;
     text-decoration: none;
     color: #fff;
-    margin: 40px;
+}
+
+@media (max-width: 768px) {
+    .footer-a {
+        font-size: 18px;
+    }
 }

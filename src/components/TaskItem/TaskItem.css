@@ -10,16 +10,10 @@
 }
 
 .button-task {
-    padding: 10px;
-    border-radius: 10px;
-    width: 150px;
-    border: 2px solid #000;
-    background-color: #000;
     color: #fff;
-    cursor: pointer;
     font-weight: bold;
     font-size: 24px;
-    margin: 0 40px;
+    margin: 10px 40px;
     transition: 0.5s ease;
 }
 
@@ -29,4 +23,26 @@
 
 .button-task-completed:hover {
     color: #008000;
+}
+
+@media (max-width: 1024px) {
+    .button-task {
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-task {
+        margin: 10px 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .TaskItem {
+        width: 90%;
+    }
+
+    .button-task {
+        margin: 5px 5px;
+    }
 }
